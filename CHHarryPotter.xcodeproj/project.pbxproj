@@ -58,10 +58,9 @@
 		3484BBC8242D527900113C36 /* CHHarryPotter */ = {
 			isa = PBXGroup;
 			children = (
+				3484BBE3242D5E5D00113C36 /* View */,
+				3484BBE2242D5E4E00113C36 /* Model */,
 				3484BBDD242D536000113C36 /* Resources */,
-				3484BBCF242D527900113C36 /* Main.storyboard */,
-				3484BBDF242D564200113C36 /* CHCharacter.h */,
-				3484BBE0242D564200113C36 /* CHCharacter.m */,
 				3484BBDE242D564200113C36 /* CHHarryPotter-Bridging-Header.h */,
 			);
 			path = CHHarryPotter;
@@ -77,6 +76,23 @@
 				3484BBD7242D527A00113C36 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3484BBE2242D5E4E00113C36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3484BBDF242D564200113C36 /* CHCharacter.h */,
+				3484BBE0242D564200113C36 /* CHCharacter.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3484BBE3242D5E5D00113C36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3484BBCF242D527900113C36 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
