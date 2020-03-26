@@ -12,6 +12,7 @@
 		3484BBD1242D527900113C36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3484BBCF242D527900113C36 /* Main.storyboard */; };
 		3484BBD3242D527A00113C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3484BBD2242D527A00113C36 /* Assets.xcassets */; };
 		3484BBD6242D527A00113C36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3484BBD4242D527A00113C36 /* LaunchScreen.storyboard */; };
+		3484BBE1242D564200113C36 /* CHCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484BBE0242D564200113C36 /* CHCharacter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		3484BBD2242D527A00113C36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3484BBD5242D527A00113C36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3484BBD7242D527A00113C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3484BBDE242D564200113C36 /* CHHarryPotter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHHarryPotter-Bridging-Header.h"; sourceTree = "<group>"; };
+		3484BBDF242D564200113C36 /* CHCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCharacter.h; sourceTree = "<group>"; };
+		3484BBE0242D564200113C36 /* CHCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCharacter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,9 @@
 			children = (
 				3484BBDD242D536000113C36 /* Resources */,
 				3484BBCF242D527900113C36 /* Main.storyboard */,
+				3484BBDF242D564200113C36 /* CHCharacter.h */,
+				3484BBE0242D564200113C36 /* CHCharacter.m */,
+				3484BBDE242D564200113C36 /* CHHarryPotter-Bridging-Header.h */,
 			);
 			path = CHHarryPotter;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 				TargetAttributes = {
 					3484BBC5242D527900113C36 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -146,6 +154,7 @@
 			files = (
 				3484BBCA242D527900113C36 /* AppDelegate.swift in Sources */,
 				3484BBCC242D527900113C36 /* SceneDelegate.swift in Sources */,
+				3484BBE1242D564200113C36 /* CHCharacter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZJLVU28L56;
 				INFOPLIST_FILE = CHHarryPotter/Resources/Info.plist;
@@ -298,6 +308,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "comColby-Harris.CHHarryPotter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CHHarryPotter/CHHarryPotter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZJLVU28L56;
 				INFOPLIST_FILE = CHHarryPotter/Resources/Info.plist;
@@ -316,6 +329,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "comColby-Harris.CHHarryPotter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CHHarryPotter/CHHarryPotter-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
